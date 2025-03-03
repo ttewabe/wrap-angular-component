@@ -16,7 +16,7 @@
           }
         }
 
-5.Create a React component(MyComponent.tsx)
+5. Create a React component(MyComponent.tsx)
 6. Create angular component & wrap React inside it
 7. Then Add Angular component into module.ts
 8. Use the defined selector in the template and run it. In app.component.html,you have to pass the propName value such as <app-my-component-wrapper [propName]="propName" (eventName)="onEventName()"></app-my-component-wrapper> to properly pass and bind the properties.
