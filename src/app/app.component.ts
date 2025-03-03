@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+//import { IMyComponentProps } from './components/MyComponent';
 
 
 @Component({
@@ -8,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'wrap-angular-render-react';
+  //For the button component, label is passed as a prop
+  propName:string = "1st Prop Value";
+  onEventName (){
+    this.propName = "2nd Prop Value";
+  }
+  //integrate react component in angular, sothat import path is passed as a prop
 }
